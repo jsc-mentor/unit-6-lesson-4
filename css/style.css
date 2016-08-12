@@ -1,0 +1,55 @@
+body {
+	text-align: center; 
+}
+
+button {
+  font-family: "Roboto", "Merriweather", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  background-color: #f78fa7;
+  box-shadow: inset 0 -3px rgba(0, 0, 0, .15);
+}
+
+p {
+	font-size: 50px;
+	font-style: italic;
+	color: #EF461F;
+	font-weight: bold;
+}
+
+.square {
+	border-radius: 4px;
+	width: 150px;
+	height: 150px;
+	background-color: #3FCBC5;
+	display: inline-block;
+	margin: 40px 10px;
+}
+
+
+@-webkit-keyframes party-time {
+  0%   { background-color: #EC4945; }
+  100% { background-color: #FBDC3C; }
+}
+@keyframes party-time {
+  0%   { background-color: #EC4945; }
+  100% { background-color: #FBDC3C; }
+}
+
+
+.party {
+ /*This probably looks foreign now, but we'll get there! Just a taste of what's to come.*/
+ -webkit-animation: party-time 300ms infinite;
+ animation: party-time 300ms infinite; /* IE 10+, Fx 29+ */
+}
